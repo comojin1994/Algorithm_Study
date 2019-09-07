@@ -3,8 +3,15 @@ Goal : 1 Day 1 Commit
 
 ### Member
 
-- 김성진
+- 정의정
+  
+  Main language : C++, Python<br/>
+  Dongguk University<br/>
+  Department of Computer Science<br/>
 
+- 김성진
+  
+  Main language : Python<br/>
   Dongguk University<br/>
   Department of Mathematices<br/>
   Department of Statistics<br/>
