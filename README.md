@@ -1,6 +1,8 @@
 # Algorithm_Study
 Goal : 1 Day 1 Commit
 
+### Member
+
 - 김성진
 
   Dongguk University<br/>
