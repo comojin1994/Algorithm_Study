@@ -7,7 +7,10 @@ Goal : 1 Day 1 Commit
   
   Main language : C++, Python<br/>
   Dongguk University<br/>
-  Department of Computer Science<br/>
+  Department of Computer Science and Engineering<br/>
+  
+  [[Github](https://github.com/Uijeong97)]
+
 
 - 김성진
   
@@ -16,4 +19,4 @@ Goal : 1 Day 1 Commit
   Department of Mathematices<br/>
   Department of Statistics<br/>
 
-  [ [Github](https://github.com/comojin1994)] [ [Facebook](https://www.facebook.com/comojin1994) ]<br/>
+  [[Github](https://github.com/comojin1994)] [ [Facebook](https://www.facebook.com/comojin1994) ]<br/>
