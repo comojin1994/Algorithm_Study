@@ -10,6 +10,6 @@ if __name__ == '__main__':
             if j == 0: result[i][j] = result[i-1][j+1]
             elif j == 9: result[i][j] = result[i-1][j-1]
             else:
-                result[i][j] = result[i-1][j-1] + result[i-1][j+1]
+                result[i][j] = result[i-1][j-1] % 10**9 + result[i-1][j+1] % 10**9
 
     print(sum(result[N-1]) % 10**9)
