@@ -3,17 +3,15 @@ input = sys.stdin.readline
 
 if __name__ == '__main__':
     n = int(input())
-    s1 = set((i+1)**2 for i in range(223))
-    s2, s3 = set(), set()
-    for i in s1:
-        for j in s1:
-            if i + j > 50000: break
-            s2.add(i+j)
-            for k in s1:
-                if i + j + k > 50000: break
-                s3.add(i + j + k)
-
-    if n in s1: print(1)
-    elif n in s2: print(2)
-    elif n in s3: print(3)
-    else: print(4)
+    min_ = 4
+    for i in range(int(n**0.5), int((n//4)**0.5), -1):
+        if i*i ==n: min_ = 1; break
+        else:
+            temp = n - i*i
+            for j in range(int(temp**0.5), int((temp//3)**0.5), -1):
+                if i*i + j*j == n: min_ = min(min_, 2); continue
+                else:
+                    temp = n - i*i - j*j
+                    for k in range(int(temp**0.5), int((temp//2)**0.5), -1):
+                        if i*i + j*j + k*k == n: min_ = min(min_, 3)
+    print(min_)
