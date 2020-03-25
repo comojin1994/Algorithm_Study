@@ -2,7 +2,7 @@ import sys
 input = sys.stdin.readline
 
 
-def LBS():
+def LIS():
     dpL, dpR = [0] * 1002, [0] * 1002
     for i in range(1, n + 1):
         dpR[A[i]] = max(max(dpL[:A[i]]) + 1, max(dpR[A[i] + 1:]) + 1, dpR[A[i]])
@@ -13,7 +13,7 @@ def LBS():
 if __name__ == "__main__":
     n = int(input())
     A = [0] + list(map(int, input().split()))
-    print(LBS())
+    print(LIS())
 
 '''
 9
