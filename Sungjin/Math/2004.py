@@ -2,8 +2,7 @@ import sys
 input = sys.stdin.readline
 
 def get_cnt(n, num):
-    cnt = 0
-    i = 1
+    cnt = 0; i = 1
     while num**i <= n:
         cnt += n // num**i
         i += 1
