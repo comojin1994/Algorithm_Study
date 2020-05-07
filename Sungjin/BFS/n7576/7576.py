@@ -1,3 +1,6 @@
+'''WRONG SOLUTION'''
+'''   TIME OUT   '''
+
 import sys
 input = sys.stdin.readline
 
