@@ -3,7 +3,7 @@ input = sys.stdin.readline
 
 if __name__ == '__main__':
     L = int(input())
-    Lucky = sorted(list(map(int, input().strip().split())))
+    Lucky = [0] + sorted(list(map(int, input().strip().split())))
     N = int(input())
     flag = False
     for i in range(len(Lucky)):
