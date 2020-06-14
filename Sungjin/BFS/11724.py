@@ -13,14 +13,15 @@ def BFS(s):
             visited.append(n)
     return set(visited)
 
-def main(N):
+def main():
     cnt = 0
     result = set()
-    for i in range(1, N+1):
+    for i in graph.keys():
         if i not in result:
             result = result.union(BFS(i))
             cnt += 1
-    return cnt
+    if len(graph.keys()) == N: return cnt
+    else: return cnt + (N - len(graph.keys()))
 
 if __name__ == '__main__':
     N, M = map(int, input().strip().split())
@@ -32,4 +33,4 @@ if __name__ == '__main__':
         graph[n1].append(n2)
         graph[n2].append(n1)
     if M == 0: print(N)
-    else: print(main(N))
+    else: print(main())
