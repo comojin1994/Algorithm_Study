@@ -8,17 +8,17 @@ if __name__ == '__main__':
     for s in S:
         if s in dic.keys(): dic[s] += 1
         else: dic[s] = 1
-    print(dic)
-    half = ''
-    odd_idx = -1
-    items = list(dic.items())
-    for idx, (alpha, cnt) in enumerate(sorted(items)):
-        if cnt % 2 != 0:
-            odd += 1
-            if odd == 2: print("I'm Sorry Hansoo"); sys.exit(0)
-            odd_idx = idx
-        else:
-            half += alpha * (cnt//2)
-    half += items[odd_idx][0] * (items[odd_idx][1] // 2)
-    result = half + items[odd_idx][0] + ''.join(reversed(list(half)))
+    even, odd = [], []
+    for s, v in dic.items():
+        if v % 2 == 0: even.append(s)
+        else: odd.append(s)
+    if len(odd) > 1: print("I'm Sorry Hansoo"); sys.exit(0)
+
+    even = sorted(even)
+    result = ''
+    for s in even:
+        result += s * (dic[s]//2)
+    if len(odd) == 1: result += odd[0] * dic[odd[0]]
+    for s in reversed(even):
+        result += s * (dic[s]//2)
     print(result)
